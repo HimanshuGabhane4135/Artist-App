@@ -11,8 +11,12 @@ function Home({ navigation }: any) {
             style={styles.container}
         >
             <View style={styles.headingTextWrapper}>
-                <Text style={styles.headingText}>Welcome to the Home Screen</Text>
-                <Text style={styles.subHeadingText}>Please select a option to get started</Text>
+                <Text style={styles.headingText}>
+                    Welcome to the Home Screen
+                </Text>
+                <Text style={styles.subHeadingText}>
+                    Please select a option to get started
+                </Text>
             </View>
             <View style={styles.buttonWrapper}>
                 <TouchableOpacity onPress={() => navigation.navigate('Albums')} style={styles.button}>
@@ -22,7 +26,9 @@ function Home({ navigation }: any) {
                         resizeMode='cover'
                     >
                         <MaterialCommunityIcons name="image-album" size={50} color="black" />
-                        <Text style={styles.buttonBlackText}>Albums</Text>
+                        <Text style={styles.buttonBlackText}>
+                            Albums
+                        </Text>
                     </ImageBackground>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('Events')} style={styles.button}>
@@ -32,7 +38,9 @@ function Home({ navigation }: any) {
                         resizeMode='cover'
                     >
                         <MaterialCommunityIcons name="calendar-blank" size={50} color="black" />
-                        <Text style={styles.buttonBlackText}>Events</Text>
+                        <Text style={styles.buttonBlackText}>
+                            Events
+                        </Text>
                     </ImageBackground>
                 </TouchableOpacity>
             </View>
@@ -44,7 +52,9 @@ function Home({ navigation }: any) {
                         resizeMode='cover'
                     >
                         <MaterialIcons name="category" size={50} color="black" />
-                        <Text style={styles.buttonWhiteText}>Categories</Text>
+                        <Text style={styles.buttonWhiteText}>
+                            Categories
+                        </Text>
                     </ImageBackground>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('Settings')} style={styles.button}>
@@ -54,7 +64,9 @@ function Home({ navigation }: any) {
                         resizeMode='cover'
                     >
                         <MaterialCommunityIcons name="cookie-settings-outline" size={50} color="black" />
-                        <Text style={styles.buttonWhiteText}>Settings</Text>
+                        <Text style={styles.buttonWhiteText}>
+                            Settings
+                        </Text>
                     </ImageBackground>
                 </TouchableOpacity>
             </View>

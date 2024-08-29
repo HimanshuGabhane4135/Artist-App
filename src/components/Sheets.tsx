@@ -3,4 +3,4 @@ import AddCategory from "./drawer/AddCategory";
 
 registerSheet('addCategory', AddCategory);
 
-export default {};
+export { };

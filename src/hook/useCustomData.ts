@@ -29,6 +29,7 @@ export const usePostData = (url: string) => {
     return useMutation<CustomData, Error, Omit<CustomData, 'id'>>({
         mutationFn: async (newData) => {
             const response = await axios.post<CustomData>(url, newData);
+            console.log(response.data);
             return response.data;
         },
         onSuccess: () => {

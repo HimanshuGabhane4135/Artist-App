@@ -74,6 +74,8 @@ yarn-error.log
 !.yarn/versions
 yarn.lock
 package-lock.json
+/ios/Podfile.lock
 /ios/Podfile.lock.eslintcache
 
 .eslintcache
+/ios/Pods/*

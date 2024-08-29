@@ -7,7 +7,13 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import RootNavigator from './src/navigation/RootNavigator';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { SheetProvider } from 'react-native-actions-sheet';
+import { SheetProvider, registerSheet } from 'react-native-actions-sheet';
+
+import AddCategory from './src/components/drawer/AddCategory';
+import AddEvent from './src/components/drawer/AddEvent';
+
+registerSheet('addCategory', AddCategory);
+registerSheet('addEvent', AddEvent);
 
 const App = () => {
   const handleBiometricAuth = async () => {
